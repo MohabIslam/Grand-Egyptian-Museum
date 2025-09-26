@@ -1,0 +1,26 @@
+/* Custom scrollbar for a darker aesthetic */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0D1A26;
+}
+::-webkit-scrollbar-thumb {
+    background: #FFD700;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #EEDD82;
+}
+/* Arabic support */
+[lang="ar"] {
+    direction: rtl;
+    text-align: right;
+}
+[lang="ar"] .list-disc {
+    list-style-position: inside;
+}
+/* Apply dark theme filter to the embedded map for visual consistency */
+.dark-map-filter {
+    filter: grayscale(100%) brightness(50%) invert(90%) hue-rotate(240deg);
+}
